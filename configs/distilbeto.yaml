@@ -1,0 +1,8 @@
+# Training settings from the paper (Table 1)
+model: dccuchile/distilbert-base-spanish-uncased   # DistilBETO; exact checkpoint not named in the paper
+learning_rate: 1.0e-4     # Adam
+batch_size: 64
+max_length: 128
+dropout: 0.2
+epochs: 10                # maximum; early stopping on validation F1
+early_stopping_patience: 2  # not stated in the paper

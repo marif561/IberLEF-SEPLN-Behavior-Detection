@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 270" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#57606a"/>
+    </marker>
+    <style>
+      .t{font-size:15px;font-weight:600;fill:#1f2328;text-anchor:middle}
+      .s{font-size:12px;fill:#57606a;text-anchor:middle}
+      .ln{stroke:#57606a;stroke-width:1.6;fill:none;marker-end:url(#a)}
+    </style>
+  </defs>
+  <rect width="960" height="270" fill="#ffffff"/>
+  <text x="480" y="30" font-size="18" font-weight="700" fill="#1f2328" text-anchor="middle">DA-VINCIS @ IberLEF 2022 · violent incidents in Spanish tweets</text>
+
+  <rect x="10" y="95" width="160" height="80" rx="10" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1.5"/>
+  <text class="t" x="90" y="127">Spanish tweet</text>
+  <text class="s" x="90" y="149">3,362 for training</text>
+
+  <rect x="200" y="95" width="170" height="80" rx="10" fill="#f6f8fa" stroke="#d0d7de" stroke-width="1.5"/>
+  <text class="t" x="285" y="122">Pre-processing</text>
+  <text class="s" x="285" y="142">URLs · emojis · hashtags</text>
+  <text class="s" x="285" y="158">punctuation removed</text>
+
+  <rect x="400" y="95" width="180" height="80" rx="10" fill="#ddf4ff" stroke="#54aeff" stroke-width="1.5"/>
+  <text class="t" x="490" y="122">DistilBETO</text>
+  <text class="s" x="490" y="142">distilled Spanish BERT</text>
+  <text class="s" x="490" y="158">67M parameters</text>
+
+  <rect x="630" y="55" width="310" height="70" rx="10" fill="#fff8c5" stroke="#d4a72c" stroke-width="1.5"/>
+  <text class="t" x="785" y="80">Task 1 · violent incident?</text>
+  <text class="s" x="785" y="100">violent / not violent</text>
+  <text class="s" x="785" y="116" style="font-weight:600;fill:#0969da">F1 0.7455 · 8th</text>
+
+  <rect x="630" y="145" width="310" height="70" rx="10" fill="#dafbe1" stroke="#4ac26b" stroke-width="1.5"/>
+  <text class="t" x="785" y="170">Task 2 · which incident?</text>
+  <text class="s" x="785" y="190">accidente · homicidio · robo · secuestro · ninguno</text>
+  <text class="s" x="785" y="206" style="font-weight:600;fill:#0969da">F1 0.4903 · 5th</text>
+
+  <path class="ln" d="M170,135 H197"/>
+  <path class="ln" d="M370,135 H397"/>
+  <path class="ln" d="M580,135 C605,135 605,90 627,90"/>
+  <path class="ln" d="M580,135 C605,135 605,180 627,180"/>
+  <text class="s" x="480" y="250">Fine-tuned separately per task · lr 1e-4 · batch 64 · max length 128 · early stopping</text>
+</svg>

@@ -1,0 +1,9 @@
+rank,team,precision,recall,f1
+1,LuisArellano,0.82,0.82,0.7817
+2,danielvallejo237,0.80,0.75,0.7759
+3,sdamian,0.76,0.75,0.7562
+4,pturon,0.82,0.70,0.7555
+5,Bernardo,0.78,0.73,0.7548
+6,ITAINNOVA,0.79,0.72,0.7529
+7,Abu,0.76,0.74,0.7480
+8,CIC-atnafu (ours),0.76,0.73,0.7455

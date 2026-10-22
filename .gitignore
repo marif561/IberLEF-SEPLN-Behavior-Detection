@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.ipynb_checkpoints/
+outputs/
+checkpoints/
+.DS_Store
+
+# DA-VINCIS data belongs to the organisers — keep only the invented sample
+data/*.csv
+data/*.tsv
