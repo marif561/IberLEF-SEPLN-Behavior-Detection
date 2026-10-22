@@ -34,7 +34,8 @@ def build_model(name: str, labels, dropout: float, multilabel: bool):
     for f in DROPOUT_FIELDS:
         if hasattr(cfg, f):
             setattr(cfg, f, dropout)
-    return AutoModelForSequenceClassification.from_pretrained(name, config=cfg)
+    # ignore_mismatched_sizes lets checkpoints that already have a classifier head be re-headed
+    return AutoModelForSequenceClassification.from_pretrained(name, config=cfg, ignore_mismatched_sizes=True)
 
 
 def main(argv=None):
